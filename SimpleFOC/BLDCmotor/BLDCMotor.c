@@ -84,10 +84,10 @@ int alignSensor (void)
 
     printf ("MOT: Align sensor.\r\n");
 
-    if (sensor_direction == UNKNOWN) // 传感器方�? 没有设置，需要�?��?
+    if (sensor_direction == UNKNOWN) // 传感器方向 没有设置，需要校正
     {
-        // find natural direction 找到�?然方�?
-        // move one electrical revolution forward 向前旋转一�?
+        // find natural direction 找到自然方向
+        // move one electrical revolution forward 向前旋转一圈
         for (i = 0; i <= 500; i++)
         {
             angle = _3PI_2 + _2PI * i / 500.0f;
@@ -114,7 +114,7 @@ int alignSensor (void)
         if ((mid_angle == end_angle) || (moved < 0.01f)) // 相等或者几乎没有动
         {
             printf ("MOT: Failed to notice movement loop222.\r\n");
-//			M0_Disable; // 电机检测不正常，关�?驱动
+//			M0_Disable; // 电机检测不正常，关闭驱动
             return 0;
         }
         else if (mid_angle < end_angle)
@@ -128,11 +128,12 @@ int alignSensor (void)
             sensor_direction = CW;
         }
 
-        printf ("MOT: PP check: ");                    // 计算Pole_Pairs
-        if (fabs (moved * pole_pairs - _2PI) > 0.5f) // 0.5 is arbitrary number it can be lower or higher!
+        printf ("MOT: PP check: ");                     // 计算Pole_Pairs 磁极对
+        // 0.5 is arbitrary number it can be lower or higher!
+        if (fabs (moved * pole_pairs - _2PI) > 0.5f)
         {
-            printf ("fail - estimated pp:");
-            pole_pairs = _2PI / moved + 0.5f; // �?点数�?整形，四舍五�?
+            printf ("fail - estimated pp:");            //失败 - 估计 PP：
+            pole_pairs = _2PI / moved + 0.5f;           // �?点数�?整形，四舍五�?
             printf ("%d\r\n", pole_pairs);
         }
         else

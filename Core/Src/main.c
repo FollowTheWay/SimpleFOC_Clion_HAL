@@ -35,7 +35,7 @@
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
-
+extern uint8_t aRxBuffer;
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -102,18 +102,18 @@ int main (void)
     PID_init ();
 
     voltage_power_supply = 12;          // V 电源电压
-    pole_pairs = 10;                  // 电机极对数，按照实际设置，虽然可以上电检测但有失败的概率
-    voltage_sensor_align = 2;          // V 航模电机设置的值小一点比如0.5-1，云台电机设置的大一点比如2-3
+    pole_pairs = 10;                    // 电机极对数，按照实际设置，虽然可以上电检测但有失败的概率
+    voltage_sensor_align = 2;           // V 航模电机设置的值小一点比如0.5-1，云台电机设置的大一点比如2-3
     voltage_limit = 6;                  // V，主要为限制电机最大电流，最大值需小于12/1.732=6.9
-    velocity_limit = 20;              // rad/s 角度模式时限制最大转速，力矩模式和速度模式不起作用
-    current_limit = 50;                  // A，foc_current和dc_current模式限制电流，不能为0。速度模式和位置模式起作用
-    torque_controller = Type_voltage; // 当前只有电压模式
-    controller = Type_velocity;          // Type_angle; //Type_torque; //Type_velocity
-    PID_velocity.P = 0.5;              // 0.5, 速度环PI参数，只用P参数方便快速调试
-    PID_velocity.I = 0.2;              // 0.2
-    P_angle.P = 20;                      // 位置环参数，只需P参数，一般不需要改动
+    velocity_limit = 20;                // rad/s 角度模式时限制最大转速，力矩模式和速度模式不起作用
+    current_limit = 50;                 // A，foc_current和dc_current模式限制电流，不能为0。速度模式和位置模式起作用
+    torque_controller = Type_voltage;   // 当前只有电压模式
+    controller = Type_velocity;         // Type_angle; //Type_torque; //Type_velocity
+    PID_velocity.P = 0.5;               // 0.5, 速度环PI参数，只用P参数方便快速调试
+    PID_velocity.I = 0.2;               // 0.2
+    P_angle.P = 20;                     // 位置环参数，只需P参数，一般不需要改动
     PID_velocity.output_ramp = 20;      // 速度爬升斜率，如果不需要可以设置为0
-    LPF_velocity.Tf = 0.0001;          // Tf设置小一点，配合爬升斜率设置，速度切换更平稳；如果没有爬升模式的斜率限制，Tf太小电机容易抖动，可设置为0.02。
+    LPF_velocity.Tf = 0.0001;           // Tf设置小一点，配合爬升斜率设置，速度切换更平稳；如果没有爬升模式的斜率限制，Tf太小电机容易抖动，可设置为0.02。
     target = 0;
 
     Motor_init ();
@@ -124,20 +124,24 @@ int main (void)
     /* Infinite loop */
     /* USER CODE BEGIN WHILE */
     /***1000 10ms***/
-// HAL_RCC_GetHCLKFreq()/1000 1ms中断一次，即HAL_Delay函数延时基准为1ms
-// HAL_RCC_GetHCLKFreq()/100000  10us中断一次，即HAL_Delay函数延时基准为10us
-// HAL_RCC_GetHCLKFreq()/1000000 1us中断一次，即HAL_Delay函数延时基准为1us
+    // HAL_RCC_GetHCLKFreq()/1000 1ms中断一次，即HAL_Delay函数延时基准为1ms
+    // HAL_RCC_GetHCLKFreq()/100000  10us中断一次，即HAL_Delay函数延时基准为10us
+    // HAL_RCC_GetHCLKFreq()/1000000 1us中断一次，即HAL_Delay函数延时基准为1us
     HAL_SYSTICK_Config (HAL_RCC_GetHCLKFreq () / 1000000);  // 配置并启动系统滴答定时器
+    HAL_UART_Receive_IT (&huart2, (uint8_t *) &aRxBuffer, 1);
     while (1)
-        {
+    {
+
+
+
 //      printf ("%d\r\n", getRawCount ());
 
-            /* USER CODE END WHILE */
+        /* USER CODE END WHILE */
 
-            /* USER CODE BEGIN 3 */
+        /* USER CODE BEGIN 3 */
 //        HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
 //        HAL_Delay(10000);
-        }
+    }
     /* USER CODE END 3 */
 }
 
@@ -167,9 +171,9 @@ void SystemClock_Config (void)
     RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;
     RCC_OscInitStruct.PLL.PLLQ = 4;
     if (HAL_RCC_OscConfig (&RCC_OscInitStruct) != HAL_OK)
-        {
-            Error_Handler ();
-        }
+    {
+        Error_Handler ();
+    }
 
     /** Initializes the CPU, AHB and APB buses clocks
     */
@@ -181,9 +185,9 @@ void SystemClock_Config (void)
     RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV2;
 
     if (HAL_RCC_ClockConfig (&RCC_ClkInitStruct, FLASH_LATENCY_5) != HAL_OK)
-        {
-            Error_Handler ();
-        }
+    {
+        Error_Handler ();
+    }
 }
 
 /* USER CODE BEGIN 4 */
@@ -200,8 +204,8 @@ void Error_Handler (void)
     /* User can add his own implementation to report the HAL error return state */
     __disable_irq ();
     while (1)
-        {
-        }
+    {
+    }
     /* USER CODE END Error_Handler_Debug */
 }
 

@@ -22,12 +22,17 @@
   <component name="ChangeListManager">
     <list default="true" id="889f87af-a170-472d-b3c8-e59faf1e44c6" name="变更" comment="移植完成，初始化完成">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/usart.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/usart.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SimpleFOC/BLDCmotor/BLDCMotor.c" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleFOC/BLDCmotor/BLDCMotor.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/simpleFOC_Clion_HAL.elf.dir/Core/Src/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/simpleFOC_Clion_HAL.elf.dir/Core/Src/main.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/simpleFOC_Clion_HAL.elf.dir/SimpleFOC/sensor/sensor.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/simpleFOC_Clion_HAL.elf.dir/SimpleFOC/sensor/sensor.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/simpleFOC_Clion_HAL.elf.dir/Core/Src/usart.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/simpleFOC_Clion_HAL.elf.dir/Core/Src/usart.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/simpleFOC_Clion_HAL.elf.dir/SimpleFOC/BLDCmotor/BLDCMotor.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/simpleFOC_Clion_HAL.elf.dir/SimpleFOC/BLDCmotor/BLDCMotor.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/simpleFOC_Clion_HAL.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/simpleFOC_Clion_HAL.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/simpleFOC_Clion_HAL.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/simpleFOC_Clion_HAL.elf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/simpleFOC_Clion_HAL.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/simpleFOC_Clion_HAL.hex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/simpleFOC_Clion_HAL.map" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/simpleFOC_Clion_HAL.map" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -122,7 +127,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.sourceCode.C/C++",
+    "settings.editor.selected.configurable": "preferences.keymap",
     "structure.view.defaults.are.configured": "true",
     "vue.rearranger.settings.migration": "true"
   }
@@ -185,7 +190,7 @@
       <workItem from="1677744865084" duration="5497000" />
       <workItem from="1677750507628" duration="880000" />
       <workItem from="1677755157533" duration="331000" />
-      <workItem from="1677755515766" duration="1386000" />
+      <workItem from="1677755515766" duration="6740000" />
     </task>
     <task id="LOCAL-00001" summary="通过clion创建hub">
       <created>1677743543110</created>
@@ -229,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677755304762</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="移植完成，初始化完成">
+      <created>1677756941594</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1677756941594</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
