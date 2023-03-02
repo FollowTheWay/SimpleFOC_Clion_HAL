@@ -20,7 +20,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="889f87af-a170-472d-b3c8-e59faf1e44c6" name="变更" comment="" />
+    <list default="true" id="889f87af-a170-472d-b3c8-e59faf1e44c6" name="变更" comment="通过clion创建hub">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,6 +70,9 @@
     </option>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -77,6 +82,7 @@
     <option name="minorVersion" value="3.2" />
   </component>
   <component name="ProjectId" id="2MLyKaTfB0m4CMqlEtZzO7Lw5Xh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -89,7 +95,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/ClionSTM32/en.stm32f4_svd/STM32F4_svd_V1.8/STM32F405.svd&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/ClionSTM32/simpleFOC_Clion_HAL&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -153,8 +159,17 @@
       <workItem from="1677742378550" duration="24000" />
       <workItem from="1677742536587" duration="15000" />
       <workItem from="1677742577768" duration="11000" />
-      <workItem from="1677742861060" duration="596000" />
+      <workItem from="1677742861060" duration="1985000" />
+      <workItem from="1677744865084" duration="3000" />
     </task>
+    <task id="LOCAL-00001" summary="通过clion创建hub">
+      <created>1677743543110</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1677743543110</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,5 +177,20 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.configurationType" implementationName="com.jetbrains.cidr.embedded.openocd.conf.type" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="通过clion创建hub" />
+    <option name="LAST_COMMIT_MESSAGE" value="通过clion创建hub" />
   </component>
 </project>
