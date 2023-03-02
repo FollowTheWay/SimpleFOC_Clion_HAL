@@ -1,0 +1,10 @@
+添加这两个文件到工程，更新CMake，编译之后会发现，有几个系统函数重复定义了，被重复定义的函数位于Src目录的syscalls.c文件中，我们把里面重复的几个函数删掉即可。
+
+在main函数的初始化代码中添加对头文件的引用并注册重定向的串口号：
+
+#include "retarget.h"
+RetargetInit(&huart1);
+
+在CMakeLists_template.txt中做出如下添加，将.c.h文件添加进去
+include_directories(${includes} retarget)
+file(GLOB_RECURSE SOURCES ${sources}  "retarget/*.*")

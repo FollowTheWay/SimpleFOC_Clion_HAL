@@ -1,0 +1,3 @@
+D:/ClionSTM32/simpleFOC_Clion_HAL/cmake-build-debug/CMakeFiles/simpleFOC_Clion_HAL.elf.dir
+D:/ClionSTM32/simpleFOC_Clion_HAL/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/ClionSTM32/simpleFOC_Clion_HAL/cmake-build-debug/CMakeFiles/rebuild_cache.dir

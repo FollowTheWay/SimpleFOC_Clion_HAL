@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated>
+      <config projectName="simpleFOC_Clion_HAL" targetName="simpleFOC_Clion_HAL.elf" />
+    </generated>
+  </component>
+  <component name="CMakeSettings" AUTO_RELOAD="true">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="889f87af-a170-472d-b3c8-e59faf1e44c6" name="变更" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="EmbeddedSvdWindowState">
+    <option name="columnWidths">
+      <list>
+        <option value="212" />
+        <option value="92" />
+        <option value="867" />
+      </list>
+    </option>
+    <option name="columnOrder">
+      <list>
+        <option value="名称" />
+        <option value="值" />
+        <option value="描述" />
+      </list>
+    </option>
+    <option name="loadedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/../en.stm32f4_svd/STM32F4_svd_V1.8/STM32F405.svd" />
+      </list>
+    </option>
+    <option name="nodes">
+      <map>
+        <entry key="STM32F405.svd" value="-E" />
+        <entry key="STM32F405.svd|g:GPIO" value="-E" />
+        <entry key="STM32F405.svd|p:GPIOB" value="-E" />
+        <entry key="STM32F405.svd|p:GPIOB|AFRH" value="HC" />
+        <entry key="STM32F405.svd|p:GPIOB|AFRL" value="HC" />
+        <entry key="STM32F405.svd|p:GPIOB|BSRR" value="HC" />
+        <entry key="STM32F405.svd|p:GPIOB|IDR" value="HE" />
+        <entry key="STM32F405.svd|p:GPIOB|LCKR" value="HC" />
+        <entry key="STM32F405.svd|p:GPIOB|MODER" value="HE" />
+        <entry key="STM32F405.svd|p:GPIOB|ODR" value="HC" />
+        <entry key="STM32F405.svd|p:GPIOB|OSPEEDR" value="HC" />
+        <entry key="STM32F405.svd|p:GPIOB|OTYPER" value="HC" />
+        <entry key="STM32F405.svd|p:GPIOB|PUPDR" value="HC" />
+      </map>
+    </option>
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2022" />
+    <option name="minorVersion" value="3.2" />
+  </component>
+  <component name="ProjectId" id="2MLyKaTfB0m4CMqlEtZzO7Lw5Xh" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/ClionSTM32/en.stm32f4_svd/STM32F4_svd_V1.8/STM32F405.svd&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;,
+    &quot;structure.view.defaults.are.configured&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager" selected="OpenOCD 下载并运行.simpleFOC_Clion_HAL.elf">
+    <configuration name="simpleFOC_Clion_HAL.elf" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="simpleFOC_Clion_HAL" TARGET_NAME="simpleFOC_Clion_HAL.elf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="simpleFOC_Clion_HAL" RUN_TARGET_NAME="simpleFOC_Clion_HAL.elf">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="simpleFOC_Clion_HAL.elf" type="com.jetbrains.cidr.embedded.openocd.conf.type" factoryName="com.jetbrains.cidr.embedded.openocd.conf.factory" nameIsGenerated="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="simpleFOC_Clion_HAL" TARGET_NAME="simpleFOC_Clion_HAL.elf" CONFIG_NAME="Debug" version="1" RUN_TARGET_PROJECT_NAME="simpleFOC_Clion_HAL" RUN_TARGET_NAME="simpleFOC_Clion_HAL.elf">
+      <openocd version="1" gdb-port="3333" telnet-port="4444" board-config="D:\ClionSTM32\stlink.cfg" reset-type="RUN" download-type="UPDATED_ONLY">
+        <debugger kind="GDB" isBundled="true" />
+      </openocd>
+      <method v="2">
+        <option name="CLION.COMPOUND.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake 应用程序.simpleFOC_Clion_HAL.elf" />
+      <item itemvalue="OpenOCD 下载并运行.simpleFOC_Clion_HAL.elf" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="889f87af-a170-472d-b3c8-e59faf1e44c6" name="变更" comment="" />
+      <created>1677561093650</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1677561093650</updated>
+      <workItem from="1677561123263" duration="2279000" />
+      <workItem from="1677570503031" duration="322000" />
+      <workItem from="1677570829916" duration="806000" />
+      <workItem from="1677571651776" duration="9976000" />
+      <workItem from="1677587041045" duration="3676000" />
+      <workItem from="1677638882640" duration="4242000" />
+      <workItem from="1677655795293" duration="10776000" />
+      <workItem from="1677723615626" duration="7179000" />
+      <workItem from="1677739354574" duration="20000" />
+      <workItem from="1677739391361" duration="15000" />
+      <workItem from="1677739455418" duration="6000" />
+      <workItem from="1677739495892" duration="63000" />
+      <workItem from="1677739649070" duration="47000" />
+      <workItem from="1677739774522" duration="9000" />
+      <workItem from="1677739872457" duration="13000" />
+      <workItem from="1677739900788" duration="13000" />
+      <workItem from="1677739946145" duration="288000" />
+      <workItem from="1677740346076" duration="33000" />
+      <workItem from="1677740415241" duration="9000" />
+      <workItem from="1677741052942" duration="167000" />
+      <workItem from="1677741234750" duration="711000" />
+      <workItem from="1677742034120" duration="14000" />
+      <workItem from="1677742119868" duration="9000" />
+      <workItem from="1677742260615" duration="94000" />
+      <workItem from="1677742378550" duration="24000" />
+      <workItem from="1677742536587" duration="15000" />
+      <workItem from="1677742577768" duration="11000" />
+      <workItem from="1677742861060" duration="596000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.configurationType" implementationName="com.jetbrains.cidr.embedded.openocd.conf.type" />
+  </component>
+</project>
