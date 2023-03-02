@@ -40,7 +40,7 @@ void Motor_init (void)
   // velocity control loop controls current
   // 如果�?电压模式限制电压，�?�果�?电流模式限制电流
   if (torque_controller == Type_voltage)
-    PID_velocity.limit = voltage_limit; // 速度模式的电流限�?
+    PID_velocity.limit = voltage_limit; // 速度模式的电流限
   else
     PID_velocity.limit = current_limit;
   P_angle.limit = velocity_limit; // 角度模式的速度限制
