@@ -21,12 +21,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="889f87af-a170-472d-b3c8-e59faf1e44c6" name="变更" comment="移植完成，初始化完成">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/saveactions_settings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleFOC/BLDCmotor/BLDCMotor.c" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleFOC/BLDCmotor/BLDCMotor.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimpleFOC/sensor/sensor.c" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleFOC/sensor/sensor.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/simpleFOC_Clion_HAL.elf.dir/SimpleFOC/BLDCmotor/BLDCMotor.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/simpleFOC_Clion_HAL.elf.dir/SimpleFOC/BLDCmotor/BLDCMotor.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/simpleFOC_Clion_HAL.elf.dir/Core/Src/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/simpleFOC_Clion_HAL.elf.dir/Core/Src/main.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/simpleFOC_Clion_HAL.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/simpleFOC_Clion_HAL.elf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/simpleFOC_Clion_HAL.map" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/simpleFOC_Clion_HAL.map" afterDir="false" />
     </list>
@@ -107,24 +108,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "last_opened_file_path": "D:/ClionSTM32/simpleFOC_Clion_HAL",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "settings.saveactions",
-    "structure.view.defaults.are.configured": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/ClionSTM32/simpleFOC_Clion_HAL&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.C/C++&quot;,
+    &quot;structure.view.defaults.are.configured&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="OpenOCD 下载并运行.simpleFOC_Clion_HAL.elf">
     <configuration name="simpleFOC_Clion_HAL.elf" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="simpleFOC_Clion_HAL" TARGET_NAME="simpleFOC_Clion_HAL.elf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="simpleFOC_Clion_HAL" RUN_TARGET_NAME="simpleFOC_Clion_HAL.elf">
       <method v="2">
@@ -181,7 +184,8 @@
       <workItem from="1677742577768" duration="11000" />
       <workItem from="1677742861060" duration="1985000" />
       <workItem from="1677744865084" duration="5497000" />
-      <workItem from="1677750507628" duration="152000" />
+      <workItem from="1677750507628" duration="880000" />
+      <workItem from="1677755157533" duration="116000" />
     </task>
     <task id="LOCAL-00001" summary="通过clion创建hub">
       <created>1677743543110</created>
@@ -211,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677750372735</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="移植完成，初始化完成">
+      <created>1677750674562</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1677750674562</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

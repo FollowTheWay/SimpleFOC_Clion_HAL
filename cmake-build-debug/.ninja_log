@@ -37,3 +37,5 @@
 28	389	6994527749315946	CMakeFiles/simpleFOC_Clion_HAL.elf.dir/SimpleFOC/BLDCmotor/BLDCMotor.c.obj	cee866fedacab528
 9	404	6994537598346039	CMakeFiles/simpleFOC_Clion_HAL.elf.dir/SimpleFOC/BLDCmotor/BLDCMotor.c.obj	cee866fedacab528
 405	918	6994537602146294	simpleFOC_Clion_HAL.elf	d04e0ed8153f37d3
+8	349	6994542352789656	CMakeFiles/simpleFOC_Clion_HAL.elf.dir/Core/Src/main.c.obj	413039bcbd592844
+350	821	6994542356319927	simpleFOC_Clion_HAL.elf	d04e0ed8153f37d3
