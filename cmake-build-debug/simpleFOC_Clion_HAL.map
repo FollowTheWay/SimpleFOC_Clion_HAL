@@ -2628,31 +2628,31 @@ LOAD d:/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/
  .debug_ranges  0x000007b0       0x48 CMakeFiles/simpleFOC_Clion_HAL.elf.dir/USER/iic/iic.c.obj
  .debug_ranges  0x000007f8       0x40 CMakeFiles/simpleFOC_Clion_HAL.elf.dir/retarget/retarget.c.obj
 
-.debug_line     0x00000000     0xb3b8
+.debug_line     0x00000000     0xb3ba
  .debug_line    0x00000000      0x244 CMakeFiles/simpleFOC_Clion_HAL.elf.dir/Core/Src/gpio.c.obj
- .debug_line    0x00000244      0x640 CMakeFiles/simpleFOC_Clion_HAL.elf.dir/Core/Src/main.c.obj
- .debug_line    0x00000884      0x1c6 CMakeFiles/simpleFOC_Clion_HAL.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj
- .debug_line    0x00000a4a      0x35e CMakeFiles/simpleFOC_Clion_HAL.elf.dir/Core/Src/stm32f4xx_it.c.obj
- .debug_line    0x00000da8      0x3c7 CMakeFiles/simpleFOC_Clion_HAL.elf.dir/Core/Src/syscalls.c.obj
- .debug_line    0x0000116f      0x220 CMakeFiles/simpleFOC_Clion_HAL.elf.dir/Core/Src/sysmem.c.obj
- .debug_line    0x0000138f      0x28f CMakeFiles/simpleFOC_Clion_HAL.elf.dir/Core/Src/system_stm32f4xx.c.obj
- .debug_line    0x0000161e      0x396 CMakeFiles/simpleFOC_Clion_HAL.elf.dir/Core/Src/usart.c.obj
- .debug_line    0x000019b4       0xa7 CMakeFiles/simpleFOC_Clion_HAL.elf.dir/Core/Startup/startup_stm32f405rgtx.s.obj
- .debug_line    0x00001a5b      0x615 CMakeFiles/simpleFOC_Clion_HAL.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
- .debug_line    0x00002070      0x828 CMakeFiles/simpleFOC_Clion_HAL.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
- .debug_line    0x00002898      0xeb3 CMakeFiles/simpleFOC_Clion_HAL.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
- .debug_line    0x0000374b      0x76f CMakeFiles/simpleFOC_Clion_HAL.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
- .debug_line    0x00003eba      0xb9e CMakeFiles/simpleFOC_Clion_HAL.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
- .debug_line    0x00004a58     0x469e CMakeFiles/simpleFOC_Clion_HAL.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
- .debug_line    0x000090f6      0x8a1 CMakeFiles/simpleFOC_Clion_HAL.elf.dir/SimpleFOC/BLDCmotor/BLDCMotor.c.obj
- .debug_line    0x00009997      0x1ec CMakeFiles/simpleFOC_Clion_HAL.elf.dir/SimpleFOC/FOCmotor/FOCMotor.c.obj
- .debug_line    0x00009b83      0x1cf CMakeFiles/simpleFOC_Clion_HAL.elf.dir/SimpleFOC/as5600/as5600.c.obj
- .debug_line    0x00009d52      0x26e CMakeFiles/simpleFOC_Clion_HAL.elf.dir/SimpleFOC/foc_utils/foc_utils.c.obj
- .debug_line    0x00009fc0      0x2b3 CMakeFiles/simpleFOC_Clion_HAL.elf.dir/SimpleFOC/lowpass_filter/lowpass_filter.c.obj
- .debug_line    0x0000a273      0x3d6 CMakeFiles/simpleFOC_Clion_HAL.elf.dir/SimpleFOC/sensor/sensor.c.obj
- .debug_line    0x0000a649      0x43a CMakeFiles/simpleFOC_Clion_HAL.elf.dir/USER/PID/pid.c.obj
- .debug_line    0x0000aa83      0x44d CMakeFiles/simpleFOC_Clion_HAL.elf.dir/USER/iic/iic.c.obj
- .debug_line    0x0000aed0      0x4e8 CMakeFiles/simpleFOC_Clion_HAL.elf.dir/retarget/retarget.c.obj
+ .debug_line    0x00000244      0x642 CMakeFiles/simpleFOC_Clion_HAL.elf.dir/Core/Src/main.c.obj
+ .debug_line    0x00000886      0x1c6 CMakeFiles/simpleFOC_Clion_HAL.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_line    0x00000a4c      0x35e CMakeFiles/simpleFOC_Clion_HAL.elf.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_line    0x00000daa      0x3c7 CMakeFiles/simpleFOC_Clion_HAL.elf.dir/Core/Src/syscalls.c.obj
+ .debug_line    0x00001171      0x220 CMakeFiles/simpleFOC_Clion_HAL.elf.dir/Core/Src/sysmem.c.obj
+ .debug_line    0x00001391      0x28f CMakeFiles/simpleFOC_Clion_HAL.elf.dir/Core/Src/system_stm32f4xx.c.obj
+ .debug_line    0x00001620      0x396 CMakeFiles/simpleFOC_Clion_HAL.elf.dir/Core/Src/usart.c.obj
+ .debug_line    0x000019b6       0xa7 CMakeFiles/simpleFOC_Clion_HAL.elf.dir/Core/Startup/startup_stm32f405rgtx.s.obj
+ .debug_line    0x00001a5d      0x615 CMakeFiles/simpleFOC_Clion_HAL.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .debug_line    0x00002072      0x828 CMakeFiles/simpleFOC_Clion_HAL.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .debug_line    0x0000289a      0xeb3 CMakeFiles/simpleFOC_Clion_HAL.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+ .debug_line    0x0000374d      0x76f CMakeFiles/simpleFOC_Clion_HAL.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+ .debug_line    0x00003ebc      0xb9e CMakeFiles/simpleFOC_Clion_HAL.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+ .debug_line    0x00004a5a     0x469e CMakeFiles/simpleFOC_Clion_HAL.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+ .debug_line    0x000090f8      0x8a1 CMakeFiles/simpleFOC_Clion_HAL.elf.dir/SimpleFOC/BLDCmotor/BLDCMotor.c.obj
+ .debug_line    0x00009999      0x1ec CMakeFiles/simpleFOC_Clion_HAL.elf.dir/SimpleFOC/FOCmotor/FOCMotor.c.obj
+ .debug_line    0x00009b85      0x1cf CMakeFiles/simpleFOC_Clion_HAL.elf.dir/SimpleFOC/as5600/as5600.c.obj
+ .debug_line    0x00009d54      0x26e CMakeFiles/simpleFOC_Clion_HAL.elf.dir/SimpleFOC/foc_utils/foc_utils.c.obj
+ .debug_line    0x00009fc2      0x2b3 CMakeFiles/simpleFOC_Clion_HAL.elf.dir/SimpleFOC/lowpass_filter/lowpass_filter.c.obj
+ .debug_line    0x0000a275      0x3d6 CMakeFiles/simpleFOC_Clion_HAL.elf.dir/SimpleFOC/sensor/sensor.c.obj
+ .debug_line    0x0000a64b      0x43a CMakeFiles/simpleFOC_Clion_HAL.elf.dir/USER/PID/pid.c.obj
+ .debug_line    0x0000aa85      0x44d CMakeFiles/simpleFOC_Clion_HAL.elf.dir/USER/iic/iic.c.obj
+ .debug_line    0x0000aed2      0x4e8 CMakeFiles/simpleFOC_Clion_HAL.elf.dir/retarget/retarget.c.obj
 
 .debug_str      0x00000000     0x3452
  .debug_str     0x00000000      0x352 CMakeFiles/simpleFOC_Clion_HAL.elf.dir/Core/Src/gpio.c.obj

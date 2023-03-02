@@ -39,3 +39,6 @@
 405	918	6994537602146294	simpleFOC_Clion_HAL.elf	d04e0ed8153f37d3
 8	349	6994542352789656	CMakeFiles/simpleFOC_Clion_HAL.elf.dir/Core/Src/main.c.obj	413039bcbd592844
 350	821	6994542356319927	simpleFOC_Clion_HAL.elf	d04e0ed8153f37d3
+7	3390	6994585214662570	CMakeFiles/simpleFOC_Clion_HAL.elf.dir/Core/Src/main.c.obj	413039bcbd592844
+29	3393	6994585214692559	CMakeFiles/simpleFOC_Clion_HAL.elf.dir/SimpleFOC/sensor/sensor.c.obj	13eda83b4d5dc31c
+3394	5302	6994585228323561	simpleFOC_Clion_HAL.elf	d04e0ed8153f37d3
