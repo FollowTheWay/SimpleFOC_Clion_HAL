@@ -23,6 +23,7 @@ extern int  pole_pairs;
 extern unsigned long open_loop_timestamp;
 extern float velocity_limit;
 extern float current_limit;
+extern float target;
 /******************************************************************************/
 void Motor_init(void);
 void Motor_initFOC(float zero_electric_offset, Direction _sensor_direction);

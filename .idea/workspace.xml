@@ -22,6 +22,23 @@
   <component name="ChangeListManager">
     <list default="true" id="889f87af-a170-472d-b3c8-e59faf1e44c6" name="变更" comment="通过clion创建hub">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/main.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/main.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimpleFOC/BLDCmotor/BLDCMotor.c" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleFOC/BLDCmotor/BLDCMotor.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimpleFOC/BLDCmotor/BLDCMotor.h" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleFOC/BLDCmotor/BLDCMotor.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/simpleFOC_Clion_HAL.elf.dir/Core/Src/gpio.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/simpleFOC_Clion_HAL.elf.dir/Core/Src/gpio.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/simpleFOC_Clion_HAL.elf.dir/Core/Src/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/simpleFOC_Clion_HAL.elf.dir/Core/Src/main.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/simpleFOC_Clion_HAL.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/simpleFOC_Clion_HAL.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/simpleFOC_Clion_HAL.elf.dir/Core/Src/stm32f4xx_it.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/simpleFOC_Clion_HAL.elf.dir/Core/Src/stm32f4xx_it.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/simpleFOC_Clion_HAL.elf.dir/Core/Src/usart.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/simpleFOC_Clion_HAL.elf.dir/Core/Src/usart.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/simpleFOC_Clion_HAL.elf.dir/SimpleFOC/BLDCmotor/BLDCMotor.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/simpleFOC_Clion_HAL.elf.dir/SimpleFOC/BLDCmotor/BLDCMotor.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/simpleFOC_Clion_HAL.elf.dir/USER/delay/User_Delay.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/simpleFOC_Clion_HAL.elf.dir/USER/delay/User_Delay.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/simpleFOC_Clion_HAL.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/simpleFOC_Clion_HAL.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/simpleFOC_Clion_HAL.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/simpleFOC_Clion_HAL.elf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/simpleFOC_Clion_HAL.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/simpleFOC_Clion_HAL.hex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/simpleFOC_Clion_HAL.map" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/simpleFOC_Clion_HAL.map" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +129,7 @@
       </method>
     </configuration>
     <configuration name="simpleFOC_Clion_HAL.elf" type="com.jetbrains.cidr.embedded.openocd.conf.type" factoryName="com.jetbrains.cidr.embedded.openocd.conf.factory" nameIsGenerated="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="simpleFOC_Clion_HAL" TARGET_NAME="simpleFOC_Clion_HAL.elf" CONFIG_NAME="Debug" version="1" RUN_TARGET_PROJECT_NAME="simpleFOC_Clion_HAL" RUN_TARGET_NAME="simpleFOC_Clion_HAL.elf">
-      <openocd version="1" gdb-port="3333" telnet-port="4444" board-config="D:\ClionSTM32\stlink.cfg" reset-type="RUN" download-type="UPDATED_ONLY">
+      <openocd version="1" gdb-port="3333" telnet-port="4444" board-config="D:\ClionSTM32\工程文件\stlink.cfg" reset-type="RUN" download-type="UPDATED_ONLY">
         <debugger kind="GDB" isBundled="true" />
       </openocd>
       <method v="2">
@@ -160,7 +177,7 @@
       <workItem from="1677742536587" duration="15000" />
       <workItem from="1677742577768" duration="11000" />
       <workItem from="1677742861060" duration="1985000" />
-      <workItem from="1677744865084" duration="3000" />
+      <workItem from="1677744865084" duration="4472000" />
     </task>
     <task id="LOCAL-00001" summary="通过clion创建hub">
       <created>1677743543110</created>
@@ -169,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677743543110</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="通过clion创建hub">
+      <created>1677744949785</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1677744949786</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

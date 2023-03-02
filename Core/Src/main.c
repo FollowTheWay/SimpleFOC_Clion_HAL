@@ -27,7 +27,10 @@
 #include "iic.h"
 #include "sensor.h"
 #include "as5600.h"
-#include "User_Delay.h"
+#include "BLDCMotor.h"
+#include "lowpass_filter.h"
+#include "pid.h"
+#include "FOCMotor.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -67,7 +70,7 @@ void SystemClock_Config(void);
   */
 int main(void) {
     /* USER CODE BEGIN 1 */
-    RetargetInit(&huart2);
+
 
     /* USER CODE END 1 */
 
@@ -91,8 +94,30 @@ int main(void) {
     MX_GPIO_Init();
     MX_USART2_UART_Init();
     /* USER CODE BEGIN 2 */
-//    IIC_GPIO_Config();
+    RetargetInit(&huart2);
+    HAL_Delay(100);
     sensor_init();
+    LPF_init();
+    PID_init();
+
+    voltage_power_supply = 12;          // V 电源电压
+    pole_pairs = 10;                  // 电机极对数，按照实际设置，虽然可以上电检测但有失败的概率
+    voltage_sensor_align = 2;          // V 航模电机设置的值小一点比如0.5-1，云台电机设置的大一点比如2-3
+    voltage_limit = 6;                  // V，主要为限制电机最大电流，最大值需小于12/1.732=6.9
+    velocity_limit = 20;              // rad/s 角度模式时限制最大转速，力矩模式和速度模式不起作用
+    current_limit = 50;                  // A，foc_current和dc_current模式限制电流，不能为0。速度模式和位置模式起作用
+    torque_controller = Type_voltage; // 当前只有电压模式
+    controller = Type_velocity;          // Type_angle; //Type_torque; //Type_velocity
+    PID_velocity.P = 0.5;              // 0.5, 速度环PI参数，只用P参数方便快速调试
+    PID_velocity.I = 0.2;              // 0.2
+    P_angle.P = 20;                      // 位置环参数，只需P参数，一般不需要改动
+    PID_velocity.output_ramp = 20;      // 速度爬升斜率，如果不需要可以设置为0
+    LPF_velocity.Tf = 0.0001;          // Tf设置小一点，配合爬升斜率设置，速度切换更平稳；如果没有爬升模式的斜率限制，Tf太小电机容易抖动，可设置为0.02。
+    target = 0;
+
+    Motor_init();
+    Motor_initFOC(0, CCW); //(0,UNKNOWN);  //(1.1,CW); 第一次先获得偏移角和方向，填入代码编译后再下载，以后可以跳过零点校准
+    printf("Motor ready.\r\n");
     /* USER CODE END 2 */
 
     /* Infinite loop */
@@ -104,6 +129,7 @@ int main(void) {
     HAL_SYSTICK_Config(HAL_RCC_GetHCLKFreq() / 1000000);  // 配置并启动系统滴答定时器
     while (1) {
 //        printf("%d\r\n", getRawCount());
+
         /* USER CODE END WHILE */
 
         /* USER CODE BEGIN 3 */
