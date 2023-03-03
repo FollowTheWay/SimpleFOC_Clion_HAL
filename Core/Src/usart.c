@@ -24,11 +24,11 @@
 #include "stdio.h"
 #include "string.h"
 
-#define RXBUFFERSIZE  256     //æœ€å¤§æ¥æ”¶å­—èŠ‚æ•°
+#define RXBUFFERSIZE  256     //×î´ó½ÓÊÕ×Ö½ÚÊı
 
-char RxBuffer[RXBUFFERSIZE];  //æ¥æ”¶æ•°æ®
-uint8_t aRxBuffer;                  //æ¥æ”¶ä¸­æ–­ç¼“å†²
-uint8_t Uart2_Rx_Cnt = 0;     //æ¥æ”¶ç¼“å†²è®¡æ•°
+char RxBuffer[RXBUFFERSIZE];  //½ÓÊÕÊı¾İ
+uint8_t aRxBuffer;                  //½ÓÊÕÖĞ¶Ï»º³å
+uint8_t Uart2_Rx_Cnt = 0;     //½ÓÊÕ»º³å¼ÆÊı
 /* USER CODE END 0 */
 
 UART_HandleTypeDef huart2;
@@ -130,25 +130,26 @@ void HAL_UART_RxCpltCallback (UART_HandleTypeDef *huart)
              the HAL_UART_TxCpltCallback could be implemented in the user file
      */
 
-    if (Uart2_Rx_Cnt >= 255)  //æº¢å‡ºåˆ¤æ–­
+    if (Uart2_Rx_Cnt >= 255)  //Òç³öÅĞ¶Ï
     {
         Uart2_Rx_Cnt = 0;
         memset (RxBuffer, 0x00, sizeof (RxBuffer));
-        HAL_UART_Transmit (&huart2, (uint8_t *) "æ•°æ®æº¢å‡º", 10, 0xFFFF);
+        HAL_UART_Transmit (&huart2, (uint8_t *) "Êı¾İÒç³ö", 10, 0xFFFF);
     }
     else
     {
         RxBuffer[Uart2_Rx_Cnt++] = aRxBuffer;   //
 
-        if ((RxBuffer[Uart2_Rx_Cnt - 1] == 0x0A) && (RxBuffer[Uart2_Rx_Cnt - 2] == 0x0D)) //åˆ¤æ–­ç»“æŸä½
+        if ((RxBuffer[Uart2_Rx_Cnt - 1] == 0x0A) && (RxBuffer[Uart2_Rx_Cnt - 2] == 0x0D)) //ÅĞ¶Ï½áÊøÎ»
         {
-            HAL_UART_Transmit (&huart2, (uint8_t *) &RxBuffer, Uart2_Rx_Cnt, 0xFFFF); //å°†æ”¶åˆ°çš„ä¿¡æ¯å‘é€å‡ºå»
-            while (HAL_UART_GetState (&huart2) == HAL_UART_STATE_BUSY_TX);//æ£€æµ‹UARTå‘é€ç»“æŸ
+            rcv2_flag = 1;
+//            HAL_UART_Transmit (&huart2, (uint8_t *) &RxBuffer, Uart2_Rx_Cnt, 0xFFFF); //½«ÊÕµ½µÄĞÅÏ¢·¢ËÍ³öÈ¥
+//            while (HAL_UART_GetState (&huart2) == HAL_UART_STATE_BUSY_TX);//¼ì²âUART·¢ËÍ½áÊø
             Uart2_Rx_Cnt = 0;
-            memset (RxBuffer, 0x00, sizeof (RxBuffer)); //æ¸…ç©ºæ•°ç»„
+//            memset (RxBuffer, 0x00, sizeof (RxBuffer)); //Çå¿ÕÊı×é
         }
     }
 
-    HAL_UART_Receive_IT (&huart2, (uint8_t *) &aRxBuffer, 1);   //å› ä¸ºæ¥æ”¶ä¸­æ–­ä½¿ç”¨äº†ä¸€æ¬¡å³å…³é—­ï¼Œæ‰€ä»¥åœ¨æœ€ååŠ å…¥è¿™è¡Œä»£ç å³å¯å®ç°æ— é™ä½¿ç”¨
+    HAL_UART_Receive_IT (&huart2, (uint8_t *) &aRxBuffer, 1);   //ÒòÎª½ÓÊÕÖĞ¶ÏÊ¹ÓÃÁËÒ»´Î¼´¹Ø±Õ£¬ËùÒÔÔÚ×îºó¼ÓÈëÕâĞĞ´úÂë¼´¿ÉÊµÏÖÎŞÏŞÊ¹ÓÃ
 }
 /* USER CODE END 1 */

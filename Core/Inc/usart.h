@@ -35,10 +35,13 @@ extern "C" {
 extern UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN Private defines */
-
+#define RXBUFFERSIZE  256     //最大接收字节数
+extern unsigned long rcv2_flag;
+extern uint8_t Uart2_Rx_Cnt;     //接收缓冲计数
+extern char RxBuffer[RXBUFFERSIZE];  //接收数据
 /* USER CODE END Private defines */
 
-void MX_USART2_UART_Init(void);
+void MX_USART2_UART_Init (void);
 
 /* USER CODE BEGIN Prototypes */
 

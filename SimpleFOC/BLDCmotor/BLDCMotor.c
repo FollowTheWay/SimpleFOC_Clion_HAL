@@ -4,7 +4,9 @@
 #include "FOCMotor.h"
 #include "sensor.h"
 #include "User_Delay.h"
-
+#include "usart.h"
+#include "stdlib.h"
+#include "string.h"
 /******************************************************************************/
 float target;
 /******************************************************************************/
@@ -362,5 +364,40 @@ float angleOpenloop (float target_angle)
     setPhaseVoltage (Uq, 0, _electricalAngle (shaft_angle, pole_pairs));
 
     return Uq;
+}
+/******************************************************************************/
+unsigned long rcv2_flag;
+/******************************************************************************/
+void commander_run (void)
+{
+    if (rcv2_flag == 1)
+    {
+
+        switch (RxBuffer[0])
+        {
+        case 'H':printf ("Hello World!\r\n");
+            break;
+        case 'T': // T6.28 将字串转换成浮点型数，
+            target = atof ((const char *) (RxBuffer + 1));
+            printf ("RX=%.2f\r\n", target);
+            break;
+        case 'P': // P0.5  设置速度环的P参数
+            PID_velocity.P = atof ((const char *) (RxBuffer + 1));
+            printf ("P=%.2f\r\n", PID_velocity.P);
+            break;
+        case 'I': // I0.2  设置速度环的I参数
+            PID_velocity.I = atof ((const char *) (RxBuffer + 1));
+            printf ("I=%.2f\r\n", PID_velocity.I);
+            break;
+        case 'V': // V  读实时速度
+            printf ("Vel=%.2f\r\n", shaft_velocity);
+            break;
+        case 'A': // A  读绝对角度
+            printf ("Ang=%.2f\r\n", shaft_angle);
+            break;
+        }
+        memset (RxBuffer, 0x00, sizeof (RxBuffer)); //清空数组
+        rcv2_flag = 0;
+    }
 }
 /******************************************************************************/

@@ -132,10 +132,10 @@ int main (void)
     while (1)
     {
 
-
-
-//      printf ("%d\r\n", getRawCount ());
-
+//        printf ("%d\r\n", getRawCount ());
+//        move(target);
+//         loopFOC();
+        commander_run ();
         /* USER CODE END WHILE */
 
         /* USER CODE BEGIN 3 */

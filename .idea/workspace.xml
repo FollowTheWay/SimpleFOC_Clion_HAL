@@ -20,16 +20,25 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="889f87af-a170-472d-b3c8-e59faf1e44c6" name="变更" comment="移植完成，初始化完成">
+    <list default="true" id="889f87af-a170-472d-b3c8-e59faf1e44c6" name="变更" comment="添加USART2不定长数据接收">
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2023-03-03T02-48-39-0103.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/usart.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/usart.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/usart.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/usart.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SimpleFOC/BLDCmotor/BLDCMotor.c" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleFOC/BLDCmotor/BLDCMotor.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimpleFOC/BLDCmotor/BLDCMotor.h" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleFOC/BLDCmotor/BLDCMotor.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2023-03-02T03-38-56-0938.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.24.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.24.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.24.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.24.2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/simpleFOC_Clion_HAL.elf.dir/Core/Src/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/simpleFOC_Clion_HAL.elf.dir/Core/Src/main.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/simpleFOC_Clion_HAL.elf.dir/Core/Src/usart.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/simpleFOC_Clion_HAL.elf.dir/Core/Src/usart.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/simpleFOC_Clion_HAL.elf.dir/SimpleFOC/BLDCmotor/BLDCMotor.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/simpleFOC_Clion_HAL.elf.dir/SimpleFOC/BLDCmotor/BLDCMotor.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/simpleFOC_Clion_HAL.elf.dir/SimpleFOC/FOCmotor/FOCMotor.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/simpleFOC_Clion_HAL.elf.dir/SimpleFOC/FOCmotor/FOCMotor.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/simpleFOC_Clion_HAL.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/simpleFOC_Clion_HAL.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/simpleFOC_Clion_HAL.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/simpleFOC_Clion_HAL.elf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/simpleFOC_Clion_HAL.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/simpleFOC_Clion_HAL.hex" afterDir="false" />
@@ -98,6 +107,10 @@
       </UrlAndAccount>
     </option>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="cidr-memory-view://2" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/../../gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/stdlib.h" root0="SKIP_INSPECTION" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -107,13 +120,16 @@
     <option name="minorVersion" value="3.2" />
   </component>
   <component name="ProjectId" id="2MLyKaTfB0m4CMqlEtZzO7Lw5Xh" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -133,6 +149,11 @@
   }
 }]]></component>
   <component name="RunManager" selected="OpenOCD 下载并运行.simpleFOC_Clion_HAL.elf">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="simpleFOC_Clion_HAL.elf" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="simpleFOC_Clion_HAL" TARGET_NAME="simpleFOC_Clion_HAL.elf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="simpleFOC_Clion_HAL" RUN_TARGET_NAME="simpleFOC_Clion_HAL.elf">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -262,6 +283,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="通过clion创建hub" />
     <MESSAGE value="移植完成，初始化完成" />
     <option name="LAST_COMMIT_MESSAGE" value="移植完成，初始化完成" />
