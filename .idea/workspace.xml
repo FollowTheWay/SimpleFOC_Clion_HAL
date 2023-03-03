@@ -20,7 +20,23 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="889f87af-a170-472d-b3c8-e59faf1e44c6" name="变更" comment="添加commander_run函数" />
+    <list default="true" id="889f87af-a170-472d-b3c8-e59faf1e44c6" name="变更" comment="添加commander_run函数">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimpleFOC/BLDCmotor/BLDCMotor.c" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleFOC/BLDCmotor/BLDCMotor.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimpleFOC/FOCmotor/FOCMotor.c" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleFOC/FOCmotor/FOCMotor.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimpleFOC/sensor/sensor.c" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleFOC/sensor/sensor.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/simpleFOC_Clion_HAL.elf.dir/Core/Src/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/simpleFOC_Clion_HAL.elf.dir/Core/Src/main.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/simpleFOC_Clion_HAL.elf.dir/SimpleFOC/BLDCmotor/BLDCMotor.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/simpleFOC_Clion_HAL.elf.dir/SimpleFOC/BLDCmotor/BLDCMotor.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/simpleFOC_Clion_HAL.elf.dir/SimpleFOC/FOCmotor/FOCMotor.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/simpleFOC_Clion_HAL.elf.dir/SimpleFOC/FOCmotor/FOCMotor.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/simpleFOC_Clion_HAL.elf.dir/SimpleFOC/sensor/sensor.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/simpleFOC_Clion_HAL.elf.dir/SimpleFOC/sensor/sensor.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/simpleFOC_Clion_HAL.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/simpleFOC_Clion_HAL.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/simpleFOC_Clion_HAL.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/simpleFOC_Clion_HAL.elf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/simpleFOC_Clion_HAL.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/simpleFOC_Clion_HAL.hex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/simpleFOC_Clion_HAL.map" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/simpleFOC_Clion_HAL.map" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -120,7 +136,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.keymap",
+    "settings.editor.selected.configurable": "editor.preferences.smartKeys",
     "structure.view.defaults.are.configured": "true",
     "vue.rearranger.settings.migration": "true"
   }
@@ -246,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677816088042</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="添加commander_run函数">
+      <created>1677816293216</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1677816293216</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

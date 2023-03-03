@@ -15,28 +15,28 @@ DQCurrent_s current;
 TorqueControlType torque_controller;
 MotionControlType controller;
 
-float sensor_offset=0;   //似乎没用
+float sensor_offset = 0;   //似乎没用
 float zero_electric_angle;
 /******************************************************************************/
 // shaft angle calculation
-float shaftAngle(void)
+float shaftAngle (void)
 {
-  // if no sensor linked return previous value ( for open loop )
-  //if(!sensor) return shaft_angle;
-  return sensor_direction*getAngle() - sensor_offset;
+    // if no sensor linked return previous value ( for open loop )
+    //if(!sensor) return shaft_angle;
+    return sensor_direction * getAngle () - sensor_offset;
 }
-// shaft velocity calculation
-float shaftVelocity(void)
+// shaft velocity calculation 轴速度解算
+float shaftVelocity (void)
 {
-  // if no sensor linked return previous value ( for open loop )
-  //if(!sensor) return shaft_velocity;
-  return sensor_direction*LPFoperator(&LPF_velocity,getVelocity());
-	//return sensor_direction*getVelocity();
+    // if no sensor linked return previous value ( for open loop )
+    //if(!sensor) return shaft_velocity;
+    return sensor_direction * LPFoperator (&LPF_velocity, getVelocity ());
+    //return sensor_direction*getVelocity();
 }
 /******************************************************************************/
-float electricalAngle(void)
+float electricalAngle (void)
 {
-  return _normalizeAngle((shaft_angle + sensor_offset) * pole_pairs - zero_electric_angle);
+    return _normalizeAngle ((shaft_angle + sensor_offset) * pole_pairs - zero_electric_angle);
 }
 /******************************************************************************/
 

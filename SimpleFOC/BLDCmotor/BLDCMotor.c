@@ -162,6 +162,9 @@ int alignSensor (void)
 }
 
 /******************************************************************************/
+/**
+ * @brief 开环FOC
+ */
 void loopFOC (void)
 {
     if (controller == Type_angle_openloop || controller == Type_velocity_openloop)
@@ -184,6 +187,10 @@ void loopFOC (void)
 }
 
 /******************************************************************************/
+/**
+ * @brief 根据main中的模式和target传入各项参数
+ * @param new_target
+ */
 void move (float new_target)
 {
     shaft_velocity = shaftVelocity ();

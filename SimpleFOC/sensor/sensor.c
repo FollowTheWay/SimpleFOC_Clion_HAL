@@ -43,15 +43,15 @@ float getAngle (void)
     angle_data_prev = angle_data; // 更新上一次的编码器原始值
 
     if (full_rotation_offset >= (_2PI * 2000)) // 转动圈数过多后浮点数精度下降，电流增加并最终堵转，每隔一定圈数归零一次
-        {                                           // 这个问题针对电机长时间连续一个方向转动
-            full_rotation_offset = 0;               // 速度模式，高速转动时每次归零会导致电机抖动一次
-            angle_prev = angle_prev - _2PI * 2000;
-        }
+    {                                           // 这个问题针对电机长时间连续一个方向转动
+        full_rotation_offset = 0;               // 速度模式，高速转动时每次归零会导致电机抖动一次
+        angle_prev = angle_prev - _2PI * 2000;
+    }
     if (full_rotation_offset <= (-_2PI * 2000))
-        {
-            full_rotation_offset = 0;
-            angle_prev = angle_prev + _2PI * 2000;
-        }
+    {
+        full_rotation_offset = 0;
+        angle_prev = angle_prev + _2PI * 2000;
+    }
 
     // return the full angle
     // (number of full rotations)*2PI + current sensor angle
@@ -59,7 +59,7 @@ float getAngle (void)
 }
 
 /******************************************************************************/
-// Shaft velocity calculation
+// Shaft velocity calculation 获取轴速度
 float getVelocity (void)
 {
     long now_us;

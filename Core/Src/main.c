@@ -123,7 +123,6 @@ int main (void)
 
     /* Infinite loop */
     /* USER CODE BEGIN WHILE */
-    /***1000 10ms***/
     // HAL_RCC_GetHCLKFreq()/1000 1ms中断一次，即HAL_Delay函数延时基准为1ms
     // HAL_RCC_GetHCLKFreq()/100000  10us中断一次，即HAL_Delay函数延时基准为10us
     // HAL_RCC_GetHCLKFreq()/1000000 1us中断一次，即HAL_Delay函数延时基准为1us
@@ -133,8 +132,8 @@ int main (void)
     {
 
 //        printf ("%d\r\n", getRawCount ());
-//        move(target);
-//         loopFOC();
+        move (target);
+        loopFOC ();
         commander_run ();
         /* USER CODE END WHILE */
 
