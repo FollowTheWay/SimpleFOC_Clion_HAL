@@ -186,7 +186,6 @@ void loopFOC (void)
     setPhaseVoltage (voltage.q, voltage.d, electrical_angle);
 }
 
-/******************************************************************************/
 /**
  * @brief 根据main中的模式和target传入各项参数
  * @param new_target
@@ -375,11 +374,14 @@ float angleOpenloop (float target_angle)
 /******************************************************************************/
 unsigned long rcv2_flag;
 /******************************************************************************/
+/**
+ * @brief 拉取指令
+ *
+ */
 void commander_run (void)
 {
     if (rcv2_flag == 1)
     {
-
         switch (RxBuffer[0])
         {
         case 'H':printf ("Hello World!\r\n");
